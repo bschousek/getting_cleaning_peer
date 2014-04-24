@@ -52,3 +52,7 @@ levels(train.data$activity)<-levels(f.activity)
 
 # Finally combine the two datasets together
 cong.data<-rbind(test.data,train.data)
+
+# And create a second independent tidy dataset with the average of each
+#  variable for each activity and each subject.
+tidy<-ddply(cong.data,.(activity,subject),numcolwise(mean))
