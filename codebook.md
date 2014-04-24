@@ -1,4 +1,4 @@
-This tidy dataset is composed of means and standard deviations of 86 variables extracted from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+This tidy dataset is composed of averages of the means and standard deviations of 86 variables extracted from the [UCI Machine Learning Repository Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 Activity labels and subject identifiers are included as columns in the data frame, named "subject" and "activity" respectively.
 
