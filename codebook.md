@@ -1,4 +1,5 @@
 original.index|original.name|tidy.name
+--------------|-------------|---------
 1|tBodyAcc-mean()-X|tBodyAcc.mean.X
 2|tBodyAcc-mean()-Y|tBodyAcc.mean.Y
 3|tBodyAcc-mean()-Z|tBodyAcc.mean.Z
