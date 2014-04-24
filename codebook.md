@@ -3,6 +3,7 @@ This tidy dataset is composed of means and standard deviations of 86 variables e
 Activity labels and subject identifiers are included as columns in the data frame, named "subject" and "activity" respectively.
 
 The names of the 86 extracted means and standard deviations had to be slightly modified from the original names since they contained characters which R does not accept as column names. The mapping from original to modified variable names are as shown in the table below.
+
 Index|Original Index|Original Name|Tidy Name
 :--------------|:-------------|:---------|:-----------
 1|1|tBodyAcc-mean()-X|tBodyAcc.mean.X
