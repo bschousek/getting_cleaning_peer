@@ -9,6 +9,7 @@ Assumptions made in the course of processing the dataset to meet the assignment 
 * Of the 561 variables contained in the original dataset, those containing the substrings "Mean", "mean" or "std" are the variables of interest
 * It is not important for the tidy dataset to indicate whether a particular line of data came from the training or test dataset
 * The names encoded in the original data source are sufficiently descriptive to not require clarification
+* The data in the X_test.txt and X_train.txt files represents a more processed version of the data in the Intertial Signals folders, so the data in the Inertial Signals folder is not considered in this analysis
 
 
 The names of the 86 extracted means and standard deviations had to be slightly modified from the original names since they contained characters which R does not accept in column names. The mapping from original to modified variable names are as shown in the table below.
