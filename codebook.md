@@ -1,6 +1,8 @@
 This file documents the dataset contained within tidy.csv, which is an output from run_analysis.R contained in this repository.
 
-The tidy dataset is composed of averages of the means and standard deviations of 86 variables plus subject ID and activity ID extracted from the [UCI Machine Learning Repository Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The averages were taken across subgroups split by test subject and activity after the test and training datasets were combined.
+The tidy dataset is composed of averages of the means and standard deviations of 86 variables plus subject ID and activity ID extracted from the [UCI Machine Learning Repository Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) dataset. The averages were taken across subgroups split by test subject and activity after the test and training datasets were combined. 
+
+Names for the variable columns were extracted from the features.txt file and modified to be suitable for data frame names. Columns indicating the test subject ID and activity ID were added to the datasets from subject_.\*txt and y_\*.text files before merging. The activity ID numerical column was converted to descriptive names using the activity_labels.txt file.
 
 Assumptions made in the course of processing the dataset to meet the assignment requirements include:
 
@@ -8,9 +10,8 @@ Assumptions made in the course of processing the dataset to meet the assignment 
 * It is not important for the tidy dataset to indicate whether a particular line of data came from the training or test dataset
 * The names encoded in the original data source are sufficiently descriptive to not require clarification
 
-Activity labels and subject identifiers are included as columns in the data frame, named "subject" and "activity" respectively.
 
-The names of the 86 extracted means and standard deviations had to be slightly modified from the original names since they contained characters which R does not accept as column names. The mapping from original to modified variable names are as shown in the table below.
+The names of the 86 extracted means and standard deviations had to be slightly modified from the original names since they contained characters which R does not accept in column names. The mapping from original to modified variable names are as shown in the table below.
 
 Index|Original Index|Original Name|Tidy Name
 :--------------|:-------------|:---------|:-----------
