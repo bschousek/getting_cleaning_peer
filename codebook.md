@@ -1,6 +1,6 @@
 This file documents the dataset contained within tidy.csv, which is an output from run_analysis.R contained in this repository.
 
-The tidy dataset is composed of averages of the means and standard deviations of 86 variables plus subject ID and activity ID extracted from the [UCI Machine Learning Repository Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The averages were taken across subgroups split by test subject and activity.
+The tidy dataset is composed of averages of the means and standard deviations of 86 variables plus subject ID and activity ID extracted from the [UCI Machine Learning Repository Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The averages were taken across subgroups split by test subject and activity after the test and training datasets were combined.
 
 Assumptions made in the course of processing the dataset to meet the assignment requirements include:
 
@@ -14,6 +14,8 @@ The names of the 86 extracted means and standard deviations had to be slightly m
 
 Index|Original Index|Original Name|Tidy Name
 :--------------|:-------------|:---------|:-----------
+Descriptive Activity Name|from y_test.txt or y_train.txt|mapping from numeric to label from activity_labels.txt|activity
+Subject ID|from subject_test.txt or subject_train.txt|NA|subject
 1|1|tBodyAcc-mean()-X|tBodyAcc.mean.X
 2|2|tBodyAcc-mean()-Y|tBodyAcc.mean.Y
 3|3|tBodyAcc-mean()-Z|tBodyAcc.mean.Z
