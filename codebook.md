@@ -10,6 +10,7 @@ Assumptions made in the course of processing the dataset to meet the assignment 
 * It is not important for the tidy dataset to indicate whether a particular line of data came from the training or test dataset
 * The names encoded in the original data source are sufficiently descriptive to not require clarification
 * The data in the X_test.txt and X_train.txt files represents a more processed version of the data in the Intertial Signals folders, so the data in the Inertial Signals folder is not considered in this analysis.
+* The software runs within the folder created by extracting the dataset (ie the folder containing the file "activity_labels.txt.") Note that I usually would prefer to not mix data and code and initially developed the code to run in a parent directory but commented out the line pointing to the child directory. In other words I took a conservative route in interpreting the instructions and left the code in a state that operates within the data directory.
 
 
 
