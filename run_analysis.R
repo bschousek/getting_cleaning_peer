@@ -1,6 +1,6 @@
 library(plyr)
-data.rootpath<-"UCI HAR Dataset"
-
+#data.rootpath<-"UCI HAR Dataset"
+data.rootpath<-"."
 #activity.labels maps data rows to activity labels (eg 1 <- WALKING)
 #Here we load this as a factor
 infile.activity.factors<-read.table(file.path(data.rootpath,"activity_labels.txt"))
@@ -56,3 +56,4 @@ cong.data<-rbind(test.data,train.data)
 # And create a second independent tidy dataset with the average of each
 #  variable for each activity and each subject.
 tidy<-ddply(cong.data,.(activity,subject),numcolwise(mean))
+write.table(tidy,"tidy.txt")
